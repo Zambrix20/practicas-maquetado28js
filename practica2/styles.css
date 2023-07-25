@@ -1,0 +1,64 @@
+* {
+    font-family: sans-serif;
+    border-radius: 10px;
+  }
+  
+  .header__box {
+    background: yellowgreen;
+    padding: 20px;
+    font-weight: bold;
+    height: 13vh;
+  }
+  
+  nav {
+    background: green;
+    padding: 15px;
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  
+  aside {
+    background: orange;
+    display: inline-block;
+    height: 64vh;
+    width: 18vw;
+    padding: 15px;
+  }
+  
+  main {
+    background: red;
+    display: inline-block;
+    width: 48vw;
+    height: 64vh;
+    padding: 30px;
+    margin-left: 23px;
+    margin-right: 23px;
+    color: white;
+  }
+  
+  article {
+    width: 43vw;
+    height: 5vh;
+    margin-top: 30px;
+    padding: 30px;
+    background: white;
+    color: black;
+    font-weight: bold;
+  }
+  
+  footer {
+    background: purple;
+    padding: 35px;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  .aside1 {
+    color: white;
+    text-align: center;
+  }
+  
+  .middleSection {
+    margin-top: 30px;
+  }
