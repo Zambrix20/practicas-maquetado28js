@@ -7,7 +7,7 @@
     background: yellowgreen;
     padding: 20px;
     font-weight: bold;
-    height: 13vh;
+    height: 10vh;
   }
   
   nav {
@@ -21,24 +21,24 @@
   aside {
     background: orange;
     display: inline-block;
-    height: 64vh;
-    width: 18vw;
-    padding: 15px;
+    height: 50vh;
+  width: 20vw;
+  padding: 20px;
   }
   
   main {
     background: red;
-    display: inline-block;
-    width: 48vw;
-    height: 64vh;
-    padding: 30px;
+    display: inline-table;
+    width: 50vw;
+    height: 50vh;
+    padding: 20px;
     margin-left: 23px;
     margin-right: 23px;
     color: white;
   }
   
   article {
-    width: 43vw;
+    width: 44vw;
     height: 5vh;
     margin-top: 30px;
     padding: 30px;
@@ -52,6 +52,7 @@
     padding: 35px;
     margin-top: 40px;
     color: white;
+    height: 45px;
   }
   
   .aside1 {
