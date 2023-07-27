@@ -1,0 +1,204 @@
+body {
+  background: black;
+  color: white;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(black, 0.6);
+}
+
+.pricing-table__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+}
+
+.pricing-table__card {
+  width: 220px;
+  height: 370px;
+  padding: 30px;
+  border-radius: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 46px -4px rgba(0, 0, 0, 0.6);
+}
+
+/* For first card */
+.pricing-table__first-card {
+  background: #7f7fd5;
+  background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+}
+
+/* For second card */
+.pricing-table__second-card {
+  margin: 0 30px;
+  z-index: 2;
+  width: 250px;
+  height: 400px;
+  background: #ff416c;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* For third card */
+.pricing-table__third-card {
+  background: #00b09b;
+  background: linear-gradient(to right, #96c93d, #00b09b);
+}
+
+/* For first and third card */
+.pricing-table__first-card > .card__price {
+  font-size: 6rem;
+}
+.pricing-table__first-card > .card__buy-button {
+  width: 230px;
+  height: 170px;
+}
+.pricing-table__first-card > .card__buy-button > h3 {
+  top: 5%;
+  left: 10%;
+  font-size: 1rem;
+}
+
+.pricing-table__third-card > .card__price {
+  font-size: 6rem;
+}
+.pricing-table__third-card > .card__buy-button {
+  width: 230px;
+  height: 170px;
+}
+.pricing-table__third-card > .card__buy-button > h3 {
+  top: 5%;
+  left: 10%;
+  font-size: 1rem;
+}
+/* ----- */
+
+/* card__type */
+.card__type {
+  margin-top: 30px;
+  letter-spacing: 0.1rem;
+}
+
+/* card__price*/
+.card__price {
+  font-size: 7.5rem;
+  position: relative;
+  left: 25%;
+  margin: 10px 0px 20px;
+  z-index: 2;
+}
+.card__price > span {
+  font-size: 1.8rem;
+  position: absolute;
+  left: -15%;
+  top: 52%;
+}
+.card__price::before {
+  position: absolute;
+  content: "";
+  color: rgba(white, 0.06);
+  font-size: 9.5rem;
+  z-index: -1;
+  right: -30%;
+  bottom: 15%;
+  text-shadow: 0 0 0px rgba(black, 0);
+  transition: all 1s ease-in-out;
+}
+
+/* card__plan para los dos border redonndeados*/
+.card__plan {
+  font-size: 1.3rem;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  bottom: 25px;
+}
+
+.card__plan::before {
+  right: 100%;
+  transform: translate(-50%, -50%);
+}
+.card__plan::after {
+  right: -100%;
+  transform: translate(-0%, -50%);
+}
+
+/*card__details*/
+.card__details {
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  left: -20px;
+  bottom: 20px;
+}
+.card__details > li {
+  margin: 15px 0px;
+  list-style-type: none;
+}
+
+/* card__buy-button */
+.card__buy-button {
+  cursor: pointer;
+  position: absolute;
+  width: 250px;
+  height: 180px;
+  background: white;
+  border-radius: 15%;
+  right: -34%;
+  bottom: -27%;
+  transition: all 0.4s ease-in-out;
+}
+.card__buy-button > h3 {
+  text-shadow: 0 0 0;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  left: 8%;
+  top: 3%;
+  color: black;
+  font-size: 1.2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+/* pricing-table__card hover */
+.pricing-table__card:hover {
+  transform: scale(1.02);
+}
+
+.pricing-table__card:hover > .card__price::before {
+  animation: text-hover 1s ease-in-out infinite normal;
+}
+
+.pricing-table__card:hover > .card__plan::before {
+  right: 90%;
+}
+.pricing-table__card:hover > .card__plan::after {
+  right: -90%;
+}
+
+.pricing-table__card:hover > .card__buy-button {
+  width: 100%;
+  right: 0%;
+  border-radius: 0%;
+}
+.pricing-table__card:hover > .card__buy-button > h3 {
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* Keyframes */
+@keyframes text-hover {
+  0% {
+    right: -30%;
+  }
+  50% {
+    right: -37%;
+  }
+  100% {
+    right: -30%;
+  }
+}
